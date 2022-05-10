@@ -19,10 +19,15 @@ ldsCtrlEst is a C++ library for estimation and control of linear dynamical syste
 <details><summary>examples scripts:</summary>
   
   - GLDS control - [`eg_glds_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_glds_ctrl_8cpp-example/#example-eg_glds_ctrl.cpp) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_glds_control/)
+
   - GLDS control of PLDS - [`eg_glds_du_plds_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_glds_du_plds_ctrl_8cpp-example/#example-eg_glds_du_plds_ctrl.cpp)
+
     - change in control (du) is being updated, rather than amplitude (u).
+
   - PLDS control - [`eg_plds_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_ctrl_8cpp-example/#example-eg_plds_ctrl.cpp)
+
   - PLDS estimation - [`eg_plds_est.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_est_8cpp-example/#example-eg_plds_est.cpp) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_plds_state_estimation/)
+
   - Switched PLDS control [`eg_plds_switched_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_switched_ctrl_8cpp-example/#example-eg_plds_switched_ctrl.cpp) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_switched_plds_control/)
   
 </details>
@@ -30,8 +35,11 @@ ldsCtrlEst is a C++ library for estimation and control of linear dynamical syste
 <details><summary>RTXI modules:</summary>
 
   - [rtxi-gldsController](https://github.com/stanley-rozell/rtxi-gldsController)
+
   - [rtxi-pldsSimulator](https://github.com/stanley-rozell/rtxi-pldsSimulator)
+
   - [rtxi-pldsSwitchedController](https://github.com/stanley-rozell/rtxi-pldsSwitchedController)
+
 </details>
 <!-- - ( 🚧python example by kjohnsen) -->
 
@@ -119,7 +127,9 @@ CLEOsim (Closed Loop, Electrophysiology, and Optogenetics Simulator) is a Python
 <img src="figures/CLOCTools_and_CLEOSim_V7_white_background.png" style='border:15px solid #ffffff'>
 
 - [code](https://github.com/kjohnsen/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
+
 </details>
+
 <details><summary>Examples and Tutorials:</summary>
 
   - [PI Control](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/PI_ctrl.ipynb)
