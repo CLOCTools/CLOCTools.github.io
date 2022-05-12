@@ -3,7 +3,7 @@ Hello, this is the overview page fo CLOCTools with links to its various reposito
 CLOC Tools includes algorthms for closed-loop control and tools for realtime implementation.  Additionally, related tools for simulation, modeling, and analysis are listed here under "satellite repositories".
 
 ## Overview
-<img src="figures/Copy of CLOCtools overview.png" height=450 style='border:15px solid #ffffff'>
+<img src="figures/Copy of CLOCtools overview.png" align='center' style='border:15px solid #ffffff00; width:100%'>
 
 CLOCTools alogirthms include linear dynamical systems control estimation (ldsCtrlEst) and hidden markov model switching linear dynamical systems (hmm).  For implementation, CLOC tools has a variety of software for interfacing with the the real time tools RTXI and TDT along with tools for interfacing across programming languages.
 
@@ -11,37 +11,51 @@ CLOCTools alogirthms include linear dynamical systems control estimation (ldsCtr
 
 ### **State-space dynamics** (GLDS, PLDS) [`stanley-rozell/ldsCtrlEst`](https://github.com/stanley-rozell/lds-ctrl-est)
 
-<img src="/figures/lds_ctrl_est_logo2022.png" height=90 style='border:15px solid #ffffff'>
+<img src="/figures/lds_ctrl_est_logo2022.png" height=90 style='border:15px solid #ffffff00'>
 
 ldsCtrlEst is a C++ library for estimation and control of linear dynamical systems (LDS) with Gaussian or Poisson observations. It is meant to provide the functionality necessary to implement feedback control of linear dynamical systems experimentally. This library was originally developed for the task of controlling neuronal activity using spike count data as feedback and optogenetic inputs for control.  ldsCtrlEst has both estimation and feedback control with parameter adaptive estimation, switched estimate and control, and can use both Gaussian and Poisson observation models.
+
+The repository also provides an alternate MATLAB implementation, MATLAB bindings to model fitting functions, and Python bindings to the entire library.
+
   - [code](https://github.com/stanley-rozell/lds-ctrl-est), [documentation](https://stanley-rozell.github.io/lds-ctrl-est/)    
  
 <details><summary>examples scripts:</summary>
   
-  - GLDS control - [`eg_glds_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_glds_ctrl_8cpp-example/#example-eg_glds_ctrl.cpp) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_glds_control/)
-
-  - GLDS control of PLDS - [`eg_glds_du_plds_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_glds_du_plds_ctrl_8cpp-example/#example-eg_glds_du_plds_ctrl.cpp)
-
+  - GLDS control - `eg_glds_ctrl`([`.cpp`][glds_ctrl_cpp]|[`.py`][glds_ctrl_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_glds_control/)
+  - GLDS control of PLDS - `eg_glds_du_plds_ctrl`([`.cpp`][glds_du_plds_ctrl_cpp]|[`.py`][glds_du_plds_ctrl_py])
     - change in control (du) is being updated, rather than amplitude (u).
-
-  - PLDS control - [`eg_plds_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_ctrl_8cpp-example/#example-eg_plds_ctrl.cpp)
-
-  - PLDS estimation - [`eg_plds_est.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_est_8cpp-example/#example-eg_plds_est.cpp) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_plds_state_estimation/)
-
-  - Switched PLDS control [`eg_plds_switched_ctrl.cpp`](https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_switched_ctrl_8cpp-example/#example-eg_plds_switched_ctrl.cpp) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_switched_plds_control/)
+  - PLDS control - `eg_plds_ctrl`([`.cpp`][plds_ctrl_cpp]|[`.py`][plds_ctrl_py])
+  - PLDS estimation - `eg_plds_est`([`.cpp`][plds_est_cpp]|[`.py`][plds_est_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_plds_state_estimation/)
+  - Switched PLDS control - `eg_plds_switched_ctrl`([`.cpp`][plds_switched_ctrl_cpp]|[`.py`][plds_switched_ctrl_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_switched_plds_control/)
+  - GLDS fit - [`eg_glds_fit.py`][glds_fit_py], [`test_glds_fit.m`][glds_fit_mat]
+  - PLDS fit - [`eg_plds_fit.py`][plds_fit_py], [`test_plds_fit.m`][plds_fit_mat]
   
 </details>
+
+[glds_ctrl_cpp]: https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_glds_ctrl_8cpp-example/#example-eg_glds_ctrl.cpp
+[glds_du_plds_ctrl_cpp]: https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_glds_du_plds_ctrl_8cpp-example/#example-eg_glds_du_plds_ctrl.cpp
+[plds_ctrl_cpp]: https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_ctrl_8cpp-example/#example-eg_plds_ctrl.cpp
+[plds_est_cpp]: https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_est_8cpp-example/#example-eg_plds_est.cpp
+[plds_switched_ctrl_cpp]: https://stanley-rozell.github.io/lds-ctrl-est/docs/api/examples/eg_plds_switched_ctrl_8cpp-example/#example-eg_plds_switched_ctrl.cpp
+
+[glds_ctrl_py]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/python/examples/eg_glds_ctrl.py
+[glds_du_plds_ctrl_py]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/python/examples/eg_glds_du_plds_ctrl.py
+[plds_ctrl_py]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/python/examples/eg_plds_ctrl.py
+[plds_est_py]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/python/examples/eg_plds_est.py
+[plds_switched_ctrl_py]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/python/examples/eg_plds_switched_ctrl.py
+[glds_fit_py]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/python/examples/eg_glds_fit.py
+[plds_fit_py]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/python/examples/eg_plds_fit.py
+
+[glds_fit_mat]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/matlab/test_glds_fit.m
+[plds_fit_mat]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/matlab/test_plds_fit.m
 
 <details><summary>RTXI modules:</summary>
 
   - [rtxi-gldsController](https://github.com/stanley-rozell/rtxi-gldsController)
-
   - [rtxi-pldsSimulator](https://github.com/stanley-rozell/rtxi-pldsSimulator)
-
   - [rtxi-pldsSwitchedController](https://github.com/stanley-rozell/rtxi-pldsSwitchedController)
 
 </details>
-<!-- - ( 🚧python example by kjohnsen) -->
 
 
 ### **Latent-switch decoding** (HMM) [`stanley-rozell/hmm`](https://github.com/stanley-rozell/hmm)
@@ -78,27 +92,24 @@ CLOCTools makes use of a variety of progamming languages. This section lists too
 
 In order to make use of real time utilites, a variety of wrappers and signal processors are needed.  Repositories for these wrappers and signal processors relevant to particular tools are listed in the sections with those tools, while more general respositories for real time utilites are listed in this section.
 
-#### RTXI
-
-<img src="figures/RTXI_logo.png" height=90 style='border:15px solid #ffffff'>
+#### <img alt='RTXI' src="figures/RTXI_logo.png" height=90 style='border:15px solid #ffffff00'>
 
 [RTXI](http://rtxi.org/), the Real-Time eXperiment Interface, is a hard real-time data acquisition and control application for biological research. At its core is a Real-Time Operating System (RTOS), which uses a modified Linux kernel to provide deterministic control in a variety of experimental settings. RTXI is a fast, free, and open-source system currently used in labs all over the world to probe diverse, technologically challenging problems, such as dynamic probing of ion-channel function, control of cardiac arrhythmia dynamics, and control of deep-brain stimulation patterns.  We have repositories with useful tools for interfacing with and configuring RTXI.
 
 - [rtxi-settings](https://github.com/stanley-rozell/rtxi-settings) -  RTXI experiment settings   
 - [stimLoader](https://github.com/stanley-rozell/rtxi-stimLoader) - Stimulus and parameter I/O 
+
 <details><summary>RTXI signal processing modules  </summary>  
   
 - https://github.com/old-rtxi-utilities
-- [quanitzer](https://github.com/old-rtxi-utilities/rtxi-quantizer)
+- [quantizer](https://github.com/old-rtxi-utilities/rtxi-quantizer)
 - [gain modulation](https://github.com/old-rtxi-utilities/rtxi-gain_mod)
 - [limiter](https://github.com/old-rtxi-utilities/rtxi-limiter)
- - [nonlinearity & spiking](https://github.com/old-rtxi-utilities/rtxi-nonlin_spike)
+- [nonlinearity & spiking](https://github.com/old-rtxi-utilities/rtxi-nonlin_spike)
   
 </details>
 
-#### TDT  
-
-<img src="figures/TDT-LOGO-BLACK-TEXT_400.png" height=60 style='border:15px solid #ffffff'>
+#### <img alt="TDT" src="figures/TDT-LOGO-BLACK-TEXT_400.png" height=60 style='border:15px solid #ffffff00'>
 
 Tucker Davis Technologies ([TDT](https://www.tdt.com/)) have a variety of hardware and software solutions for neuroscience.  We have respositories with useful tools for interfacing with TDT hardware and software. 
 
@@ -108,6 +119,13 @@ TDT utilities:
   - [rtxi-tdtLFP](https://github.com/stanley-rozell/rtxi-tdtLFP) - receive local field potential (LFP)
   - [tdtUDP](https://github.com/stanley-rozell/tdtUDP) - A repository for receiving/sending data through Tucker Davis Technologies UDP interface
 
+## Related publications
+[**State-space optimal feedback control of optogenetically driven neural activity**](https://www.biorxiv.org/content/10.1101/2020.06.25.171785v2)<br>
+M.F. Bolus, A.A. Willats, C.J. Rozell and G.B. Stanley. *Journal of Neural Engineering*, 18(3), pp. 036006, March 2021.
+
+[**Design strategies for dynamic closed-loop optogenetic neurocontrol in vivo**](https://iopscience.iop.org/article/10.1088/1741-2552/aaa506)<br>
+M.F. Bolus, A.A. Willats, C.J. Whitmire, C.J. Rozell and G.B. Stanley. *Journal of Neural Engineering*, 15(2), pp. 026011, January 2018.
+
 ## Satellite repositories 
 These projects contain related work that doesn't necessarily fit into the primary focus of CLOCTools or have their own goals seperate from CLOCTools.  They are listed here for completeness and relevance.  Of particular importance is CLEOSim which can serve to test the algorithms in ldsCtrlEst and hmm and to prototype experiments in-silico.
 ### StAC (analysis & manuscript figures)
@@ -115,22 +133,32 @@ These projects contain related work that doesn't necessarily fit into the primar
 <!-- will get transferred over to stanley-rozell/state-aware-control -->
 
 
-### CLEOSim
+<!-- <img src="/figures/CLEOsim_logo.png" height=90 style='border:15px solid #ffffff'> -->
+<h4>
+<img 
+    alt="CLEOsim"
+    style="display: block; border:15px solid #ffffff00;"
+    height=90
+    src="https://user-images.githubusercontent.com/19983357/167221164-33ca27e5-e2cb-4dd6-9cb7-2159e4a84b82.png" 
+    alt="logo">
+</h4>
 
-<img src="/figures/CLEOsim_logo.png" height=90 style='border:15px solid #ffffff'>
-
-[CLEOsim](https://github.com/kjohnsen/cleosim) - Closed Loop, Electrophysiology, and Optogenetics Simulator
-
-CLEOsim (Closed Loop, Electrophysiology, and Optogenetics Simulator) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, and closed-loop experiments.  In conjunction with algorithm toolsets such as lds-ctrl-est and HMM, CLEOSim can test contol algorithms for use in closed-loop neuroscience on Brian 2 spiking neural network models.  In conjunction with implementation toolsets such as lds-ctrl-est-pybind, CLEOSim can also serve to prototype closed-loop experiments in silico and to test control algorithms on various models of mesoscale neural activity.
+[CLEOsim](https://github.com/Sensory-Information-Processing-Lab/cleosim) (Closed Loop, Electrophysiology, and Optogenetics Simulator) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, and closed-loop experiments.  In conjunction with algorithm toolsets such as lds-ctrl-est and HMM, CLEOSim can test contol algorithms for use in closed-loop neuroscience on Brian 2 spiking neural network models.  In conjunction with implementation toolsets such as lds-ctrl-est-pybind, CLEOSim can also serve to prototype closed-loop experiments in silico and to test control algorithms on various models of mesoscale neural activity.
 
 
-<img src="figures/CLOCTools_and_CLEOSim_V7_white_background.png" style='border:15px solid #ffffff'>
+<p align="center">
+  <img 
+      style="display: block; 
+             width: 100%;"
+      src="https://user-images.githubusercontent.com/19983357/167465825-363ad169-bc2e-412f-a8ab-12f960769e9b.png" 
+      alt="CLOCTools and CLEOsim">
+  </img>
+</p>
 
-- [code](https://github.com/kjohnsen/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
+- [code](https://github.com/Sensory-Information-Processing-Lab/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
 
-</details>
 
-<details><summary>Examples and Tutorials:</summary>
+<details><summary>tutorials:</summary>
 
   - [PI Control](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/PI_ctrl.ipynb)
   - [electrode setup](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/electrodes.ipynb)
