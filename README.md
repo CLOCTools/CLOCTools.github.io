@@ -19,7 +19,7 @@ The repository also provides an alternate MATLAB implementation, MATLAB bindings
 
   - [code](https://github.com/stanley-rozell/lds-ctrl-est), [documentation](https://stanley-rozell.github.io/lds-ctrl-est/)    
  
-<details><summary>examples scripts:</summary>
+<details markdown="1"><summary>examples scripts:</summary>
   
   - GLDS control - `eg_glds_ctrl`([`.cpp`][glds_ctrl_cpp]|[`.py`][glds_ctrl_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_glds_control/)
   - GLDS control of PLDS - `eg_glds_du_plds_ctrl`([`.cpp`][glds_du_plds_ctrl_cpp]|[`.py`][glds_du_plds_ctrl_py])
