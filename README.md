@@ -22,11 +22,11 @@ The repository also provides an alternate MATLAB implementation, MATLAB bindings
 <details markdown="1"><summary>examples scripts:</summary>
   
   - GLDS control - `eg_glds_ctrl`([`.cpp`][glds_ctrl_cpp]\|[`.py`][glds_ctrl_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_glds_control/)
-  - GLDS control of PLDS - `eg_glds_du_plds_ctrl`([`.cpp`][glds_du_plds_ctrl_cpp]|[`.py`][glds_du_plds_ctrl_py])
+  - GLDS control of PLDS - `eg_glds_du_plds_ctrl`([`.cpp`][glds_du_plds_ctrl_cpp]\|[`.py`][glds_du_plds_ctrl_py])
     - change in control (du) is being updated, rather than amplitude (u).
-  - PLDS control - `eg_plds_ctrl`([`.cpp`][plds_ctrl_cpp]|[`.py`][plds_ctrl_py])
-  - PLDS estimation - `eg_plds_est`([`.cpp`][plds_est_cpp]|[`.py`][plds_est_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_plds_state_estimation/)
-  - Switched PLDS control - `eg_plds_switched_ctrl`([`.cpp`][plds_switched_ctrl_cpp]|[`.py`][plds_switched_ctrl_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_switched_plds_control/)
+  - PLDS control - `eg_plds_ctrl`([`.cpp`][plds_ctrl_cpp]\|[`.py`][plds_ctrl_py])
+  - PLDS estimation - `eg_plds_est`([`.cpp`][plds_est_cpp]\|[`.py`][plds_est_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_plds_state_estimation/)
+  - Switched PLDS control - `eg_plds_switched_ctrl`([`.cpp`][plds_switched_ctrl_cpp]\|[`.py`][plds_switched_ctrl_py]) - [tutorial](https://stanley-rozell.github.io/lds-ctrl-est/docs/tutorials/eg_switched_plds_control/)
   - GLDS fit - [`eg_glds_fit.py`][glds_fit_py], [`test_glds_fit.m`][glds_fit_mat]
   - PLDS fit - [`eg_plds_fit.py`][plds_fit_py], [`test_plds_fit.m`][plds_fit_mat]
   
@@ -49,7 +49,7 @@ The repository also provides an alternate MATLAB implementation, MATLAB bindings
 [glds_fit_mat]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/matlab/test_glds_fit.m
 [plds_fit_mat]: https://github.com/stanley-rozell/lds-ctrl-est/tree/master/matlab/test_plds_fit.m
 
-<details><summary>RTXI modules:</summary>
+<details markdown="1"><summary>RTXI modules:</summary>
 
   - [rtxi-gldsController](https://github.com/stanley-rozell/rtxi-gldsController)
   - [rtxi-pldsSimulator](https://github.com/stanley-rozell/rtxi-pldsSimulator)
@@ -99,7 +99,7 @@ In order to make use of real time utilites, a variety of wrappers and signal pro
 - [rtxi-settings](https://github.com/stanley-rozell/rtxi-settings) -  RTXI experiment settings   
 - [stimLoader](https://github.com/stanley-rozell/rtxi-stimLoader) - Stimulus and parameter I/O 
 
-<details><summary>RTXI signal processing modules  </summary>  
+<details markdown="1"><summary>RTXI signal processing modules  </summary>  
   
 - https://github.com/old-rtxi-utilities
 - [quantizer](https://github.com/old-rtxi-utilities/rtxi-quantizer)
@@ -158,7 +158,7 @@ These projects contain related work that doesn't necessarily fit into the primar
 - [code](https://github.com/Sensory-Information-Processing-Lab/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
 
 
-<details><summary>tutorials:</summary>
+<details markdown="1"><summary>tutorials:</summary>
 
   - [PI Control](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/PI_ctrl.ipynb)
   - [electrode setup](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/electrodes.ipynb)
