@@ -1,6 +1,6 @@
 # CLOCTools
 Hello, this is the overview page fo CLOCTools with links to its various repositories. CLOCTools are a library of tools for closed-loop neuroscience.
-CLOC Tools includes algorthms for closed-loop control and tools for realtime implementation.  Additionally, related tools for simulation, modeling, and analysis are listed here under "satellite repositories".
+CLOCTools includes algorthms for closed-loop control and tools for realtime implementation.  Additionally, you'll find a list of relevant publications and related tools for simulation, modeling, and analysis.
 
 ## Overview
 <img src="figures/Copy of CLOCtools overview.png" align='center' style='border:15px solid #ffffff00; width:100%'>
@@ -120,6 +120,15 @@ TDT utilities:
   - [tdtUDP](https://github.com/stanley-rozell/tdtUDP) - A repository for receiving/sending data through Tucker Davis Technologies UDP interface
 
 ## Related publications
+[**CLOC Tools: A Library of Tools for Closed-Loop Neuroscience**](https://github.com/stanley-rozell/tools-for-neuro-control-manuscript)<br>
+A.A. Willats, M.F. Bolus, K.A. Johnsen, G.B. Stanley, and C.J. Rozell. *In prep*, 2022.
+
+[**State-Aware Control of Switching Neural Dynamics**](https://github.com/awillats/state-aware-control)<br>
+A.A. Willats, M.F. Bolus, C.J. Whitmire, G.B. Stanley, and C.J. Rozell. *In prep*, 2022.
+
+[**Closed-Loop Identifiability in Neural Circuits**](https://github.com/awillats/clinc)<br>
+A. Willats, M. O'Shaughnessy, and C. Rozell. *In prep*, 2022.
+
 [**State-space optimal feedback control of optogenetically driven neural activity**](https://www.biorxiv.org/content/10.1101/2020.06.25.171785v2)<br>
 M.F. Bolus, A.A. Willats, C.J. Rozell and G.B. Stanley. *Journal of Neural Engineering*, 18(3), pp. 036006, March 2021.
 
