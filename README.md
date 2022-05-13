@@ -161,7 +161,6 @@ These projects contain related work that doesn't necessarily fit into the primar
              width: 100%;"
       src="https://user-images.githubusercontent.com/19983357/167465825-363ad169-bc2e-412f-a8ab-12f960769e9b.png" 
       alt="CLOCTools and CLEOsim">
-  </img>
 </p>
 
 - [code](https://github.com/Sensory-Information-Processing-Lab/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
