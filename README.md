@@ -85,7 +85,8 @@ Building a switched control loop is demonstrated at [`eg_plds_switched_ctrl.cpp`
 CLOCTools makes use of a variety of programming languages. This section lists tools to interface across these languages.
 
 - [eg-cpp-library](https://github.com/CLOCTools/eg-cpp-library) - An example repository for C++ library development
-- [lds-ctrl-est-pybind](https://github.com/CLOCTools/lds-ctrl-est/tree/master/python/ldsctrlest) - python bindings to lds-ctrl-est core C++ functionality
+- [lds-ctrl-est-pybind](https://github.com/CLOCTools/lds-ctrl-est/tree/master/python/ldsctrlest) - python bindings to ldsCtrlEst core C++ functionality
+- [lds-ctrl-est-matlab](https://github.com/CLOCTools/lds-ctrl-est/tree/master/matlab) - MATLAB implementations, bindings to ldsCtrlEst
 - [cpp-matlab-demos](https://github.com/CLOCTools/hmm/tree/master/matlab) - using mex to verify algos in c++ *(currently a part of the HMM repository)*
 
 ### Real-time utilities
