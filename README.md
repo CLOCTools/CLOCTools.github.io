@@ -136,31 +136,31 @@ M.F. Bolus, A.A. Willats, C.J. Rozell and G.B. Stanley. *Journal of Neural Engin
 M.F. Bolus, A.A. Willats, C.J. Whitmire, C.J. Rozell and G.B. Stanley. *Journal of Neural Engineering*, 15(2), pp. 026011, January 2018.
 
 ## Satellite repositories 
-These projects contain related work that doesn't necessarily fit into the primary focus of CLOCTools or have their own goals seperate from CLOCTools.  They are listed here for completeness and relevance.  Of particular importance is CLEOSim which can serve to test the algorithms in ldsCtrlEst and hmm and to prototype experiments in-silico.
+These projects contain related work that doesn't necessarily fit into the primary focus of CLOCTools or have their own goals seperate from CLOCTools.  They are listed here for completeness and relevance.  Of particular importance is Cleo which can serve to test the algorithms in ldsCtrlEst and hmm and to prototype experiments in-silico.
 ### StAC (analysis & manuscript figures)
 [StAC](https://github.com/awillats/state-aware-control) - State-aware control of switching neural dynamics.  StAC applies control, decoding, and estimation to switching models of neural responses. Hidden Markov models and Poisson linear dynamical systems are used to design and characterize feedback in simulation and are compared to non-switching “state-naive” approaches. Real-time implementation is provided by [stanley-rozell/rtxi-StAC](#state-aware-switched-control-of-neural-dynamics-stac), however [stanley-rozell/state-aware-control-manuscript](https://github.com/awillats/state-aware-control) contains additional simulations, analysis, and plotting (in MATLAB) for the associated manuscript *(in preparation)*.
 <!-- will get transferred over to stanley-rozell/state-aware-control -->
 
 
-<!-- <img src="/figures/CLEOsim_logo.png" height=90 style='border:15px solid #ffffff'> -->
+<!-- <img src="/figures/Cleo_logo.png" height=90 style='border:15px solid #ffffff'> -->
 <h4>
 <img 
-    alt="CLEOsim"
+    alt="Cleo"
     style="display: block; border:15px solid #ffffff00;"
     height=90
-    src="https://user-images.githubusercontent.com/19983357/167221164-33ca27e5-e2cb-4dd6-9cb7-2159e4a84b82.png" 
+    src="https://user-images.githubusercontent.com/19983357/187561700-100b853a-d226-4039-a580-1d798b00f9e4.png" 
     alt="logo">
 </h4>
 
-[CLEOsim](https://github.com/Sensory-Information-Processing-Lab/cleosim) (Closed Loop, Electrophysiology, and Optogenetics Simulator) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, and closed-loop experiments.  In conjunction with algorithm toolsets such as lds-ctrl-est and HMM, CLEOSim can test contol algorithms for use in closed-loop neuroscience on Brian 2 spiking neural network models.  In conjunction with implementation toolsets such as lds-ctrl-est-pybind, CLEOSim can also serve to prototype closed-loop experiments in silico and to test control algorithms on various models of mesoscale neural activity.
+[Cleo](https://github.com/Sensory-Information-Processing-Lab/cleosim) (Closed-Loop, Electrophysiology, and Optogenetics experiment simulation testbed) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, and closed-loop experiments.  In conjunction with algorithm toolsets such as lds-ctrl-est and HMM, Cleo can test contol algorithms for use in closed-loop neuroscience on Brian 2 spiking neural network models.  In conjunction with implementation toolsets such as lds-ctrl-est-pybind, Cleo can also serve to prototype closed-loop experiments in silico and to test control algorithms on various models of mesoscale neural activity.
 
 
 <p align="center">
   <img 
       style="display: block; 
              width: 100%;"
-      src="https://user-images.githubusercontent.com/19983357/167465825-363ad169-bc2e-412f-a8ab-12f960769e9b.png" 
-      alt="CLOCTools and CLEOsim">
+      src="https://user-images.githubusercontent.com/19983357/187723498-f0f03da8-096a-46eb-90df-28da55dce7a0.png" 
+      alt="CLOCTools and Cleo">
 </p>
 
 - [code](https://github.com/Sensory-Information-Processing-Lab/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
