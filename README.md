@@ -21,7 +21,7 @@ The repository also provides an alternate MATLAB implementation, MATLAB bindings
 
   - [code](https://github.com/CLOCTools/lds-ctrl-est), [documentation](https://CLOCTools.github.io/lds-ctrl-est/)    
  
-<details markdown="1"><summary>examples scripts:</summary>
+<details markdown="1"><summary>example scripts:</summary>
   
   - GLDS control - `eg_glds_ctrl`([`.cpp`][glds_ctrl_cpp]\|[`.py`][glds_ctrl_py]) - [tutorial](https://CLOCTools.github.io/lds-ctrl-est/docs/tutorials/eg_glds_control/)
   - GLDS control of PLDS - `eg_glds_du_plds_ctrl`([`.cpp`][glds_du_plds_ctrl_cpp]\|[`.py`][glds_du_plds_ctrl_py])
@@ -104,7 +104,7 @@ In order to make use of real time utilities, a variety of wrappers and signal pr
 
 <details markdown="1"><summary>RTXI signal processing modules  </summary>  
   
-- https://github.com/old-rtxi-utilities
+- <https://github.com/old-rtxi-utilities>
 - [quantizer](https://github.com/old-rtxi-utilities/rtxi-quantizer)
 - [gain modulation](https://github.com/old-rtxi-utilities/rtxi-gain_mod)
 - [limiter](https://github.com/old-rtxi-utilities/rtxi-limiter)
