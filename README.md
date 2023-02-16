@@ -1,6 +1,8 @@
 # CLOCTools
-Hello, this is the overview page for CLOCTools with links to its various repositories. CLOCTools are a library of tools for closed-loop neuroscience.
-CLOCTools includes algorithms for closed-loop control and tools for real-time implementation.  Additionally, you'll find a list of relevant publications and related tools for simulation, modeling, and analysis.
+Welcome!
+CLOCTools is a library of tools for closed-loop neuroscience developed by [Christopher Rozell's](https://siplab.gatech.edu) and [Garrett Stanley's](https://stanley.gatech.edu) labs at Georgia Tech.
+CLOCTools includes core algorithms for state-space and state-switching control as well as tools for implementation in real-time experiments.
+Additionally, you'll find a list of relevant publications and related tools for simulation, modeling, and analysis.
 
 ## Overview
 <img src="figures/Copy of CLOCtools overview.png" align='center' style='border:15px solid #ffffff00; width:100%'>
