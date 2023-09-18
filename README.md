@@ -155,7 +155,8 @@ These projects contain related work that doesn't necessarily fit into the primar
     alt="logo">
 </h4>
 
-[Cleo](https://github.com/Sensory-Information-Processing-Lab/cleosim) (Closed-Loop, Electrophysiology, and Optogenetics experiment simulation testbed) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, and closed-loop experiments.  In conjunction with implementation tool sets such as ldsCtrlEst Python bindings, Cleo can also serve to prototype closed-loop experiments in silico and to test control algorithms on various models of mesoscale neural activity.
+[Cleo](https://github.com/siplab-gt/cleosim) (Closed-Loop, Electrophysiology, and Optophysiology experiment simulation testbed) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, two-photon imaging, and closed-loop experiments. 
+Cleo can serve a tool for both prototyping experiments and, by simulating perturbation and measurement technolgoy, for producing simulated results that are more comparable to experimental results.
 
 
 <p align="center">
@@ -166,7 +167,7 @@ These projects contain related work that doesn't necessarily fit into the primar
       alt="CLOCTools and Cleo">
 </p>
 
-- [code](https://github.com/Sensory-Information-Processing-Lab/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
+- [code](https://github.com/siplab-gt/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
 
 
 <details markdown="1"><summary>tutorials:</summary>
