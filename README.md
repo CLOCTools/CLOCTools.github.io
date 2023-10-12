@@ -155,7 +155,7 @@ These projects contain related work that doesn't necessarily fit into the primar
     alt="logo">
 </h4>
 
-[Cleo](https://github.com/siplab-gt/cleosim) (Closed-Loop, Electrophysiology, and Optophysiology experiment simulation testbed) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, two-photon imaging, and closed-loop experiments. 
+[Cleo](https://github.com/siplab-gt/cleo) (Closed-Loop, Electrophysiology, and Optophysiology experiment simulation testbed) is a Python package built on the Brian 2 spiking neural network simulator developed bridging theory and experiment for mesoscale neuroscience, facilitating electrode recording, optogenetic stimulation, two-photon imaging, and closed-loop experiments. 
 Cleo can serve a tool for both prototyping experiments and, by simulating perturbation and measurement technolgoy, for producing simulated results that are more comparable to experimental results.
 
 
@@ -163,21 +163,13 @@ Cleo can serve a tool for both prototyping experiments and, by simulating pertur
   <img 
       style="display: block; 
              width: 100%;"
-      src="https://user-images.githubusercontent.com/19983357/187723498-f0f03da8-096a-46eb-90df-28da55dce7a0.png" 
+      src="https://raw.githubusercontent.com/siplab-gt/cleo/master/docs/_static/cloctools_and_cleo.png" 
       alt="CLOCTools and Cleo">
 </p>
 
-- [code](https://github.com/siplab-gt/cleosim), [documentation](https://cleosim.readthedocs.io/en/latest/)
+- [code](https://github.com/siplab-gt/cleo)
+- [documentation](https://cleosim.readthedocs.io/en/latest/)
 
-
-<details markdown="1"><summary>tutorials:</summary>
-
-  - [PI Control](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/PI_ctrl.ipynb)
-  - [electrode setup](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/electrodes.ipynb)
-  - [on-off control](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/on_off_ctrl.ipynb)
-  - [optogenetics](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/optogenetics.ipynb)
-  - [LQR Control using ldsCtrlEst](https://github.com/kjohnsen/cleosim/blob/master/docs/tutorials/lqr_ctrl_ldsctrlest.ipynb)
-</details>
 
 ### CLINC
 [CLINC](https://github.com/awillats/clinc) - Closed-loop identifiability in neural circuits. This project proposes a framework for understanding the impact of open and closed-loop interventions in identifying neural circuits. This manuscript (in preparation) summarizes the role of stimulation in circuit inference and demonstrates how to design interventions through simple gaussian network simulations. See also [https://github.com/awillats/brian_delayed_gaussian](awillats/brian_delayed_gaussian) for simulating networks of Gaussian nodes with delayed connections in the Brian2 simulator framework.
