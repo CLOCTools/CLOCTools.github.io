@@ -80,6 +80,10 @@ https://github.com/CLOCTools/lfp-cpp-library/blob/master/src/lfpRatiometer.cpp -
 StAC allows for model-based control and estimation of a switched (PLDS) system. It relies on the [CLOCTools/ldsCtrlEst](https://github.com/CLOCTools/lds-ctrl-est) and [CLOCTools/hmm](https://github.com/CLOCTools/hmm) libraries.
 Building a switched control loop is demonstrated at [`eg_plds_switched_ctrl.cpp`](https://CLOCTools.github.io/lds-ctrl-est/docs/tutorials/eg_switched_plds_control/), an RTXI wrapper for switched control of a PLDS system suitable for custom decoding is available at [rtxi-pldsSwitchedController](https://github.com/CLOCTools/rtxi-pldsSwitchedController), and an RTXI wrapper for switched control of a PLDS using an HMM for decoding is available at [rtxi-StAC](https://github.com/CLOCTools/rtxi-StAC). *See also section [Satellite:StAC](#stac-analysis--manuscript-figures) for analysis code and manuscript figures.*
 
+### Linear quadratic model-predictive control [`CLOCTools/lqmpc`](https://github.com/CLOCTools/lqmpc)
+Model-predictive control (MPC) is a more flexible form of optimal control that allows for constraints and time-varying cost functions.
+This Python package provides an easy-to-use implementation for the case of linear dynamics and quadratic cost functions, yielding a convex optimization problem which we solve with [OSQP](https://osqp.org/).
+
 ## Implementation tools
 
 ### Cross-language utilities
